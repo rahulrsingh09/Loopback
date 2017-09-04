@@ -14,11 +14,11 @@
     ]
   },
   "User": {
-    "dataSource": "usermysql",
-    "public" : false
+    "dataSource": "localmysql",
+    "public": true
   },
   "AccessToken": {
-    "dataSource": "usermysql",
+    "dataSource": "db",
     "public": false
   },
   "ACL": {
@@ -63,8 +63,8 @@
       }
     }
   },
-  "user": {
-    "dataSource": "usermysql",
+  "clients": {
+    "dataSource": "localmysql",
     "public": true
   }
 }
