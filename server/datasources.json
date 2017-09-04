@@ -1,0 +1,26 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "localmysql": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "loopback",
+    "password": "root",
+    "name": "localmysql",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "usermysql": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "C1X-BANNERG",
+    "password": "root",
+    "name": "usermysql",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
