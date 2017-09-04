@@ -42,7 +42,7 @@
     },
     "fname": {
       "type": "String",
-      "required": true,
+      "required": false,
       "length": 300,
       "precision": null,
       "scale": null,
@@ -52,12 +52,12 @@
         "dataLength": 300,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "N"
+        "nullable": "Y"
       }
     },
     "lname": {
       "type": "String",
-      "required": true,
+      "required": false,
       "length": 300,
       "precision": null,
       "scale": null,
@@ -67,7 +67,7 @@
         "dataLength": 300,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "N"
+        "nullable": "Y"
       }
     },
     "username": {
@@ -87,7 +87,7 @@
     },
     "email": {
       "type": "String",
-      "required": true,
+      "required": false,
       "length": 250,
       "precision": null,
       "scale": null,
@@ -127,7 +127,7 @@
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
-        "nullable": "N"
+        "nullable": "Y"
       }
     },
     "passwordHash": {
@@ -340,5 +340,13 @@
         "nullable": "Y"
       }
     }
-  }
+  },
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "accessType": "*"
+    }
+  ]
 }
