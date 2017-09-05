@@ -18,7 +18,7 @@
     "public" : false
   },
   "AccessToken": {
-    "dataSource": "usermysql",
+    "dataSource": "db",
     "public": false
   },
   "ACL": {

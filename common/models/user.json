@@ -2,11 +2,11 @@
   "name": "user",
   "base": "User",
   "options": {
-    "idInjection": false,
     "mysql": {
       "schema": "C1X-BANNERG",
       "table": "User"
-    }
+    },
+    "validateUpsert": true
   },
   "properties": {
     "id": {
@@ -70,36 +70,6 @@
         "nullable": "Y"
       }
     },
-    "username": {
-      "type": "String",
-      "required": false,
-      "length": 300,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "username",
-        "dataType": "varchar",
-        "dataLength": 300,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "email": {
-      "type": "String",
-      "required": false,
-      "length": 250,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "email",
-        "dataType": "varchar",
-        "dataLength": 250,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      }
-    },
     "phone": {
       "type": "String",
       "required": false,
@@ -117,7 +87,7 @@
     },
     "status": {
       "type": "Number",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
@@ -294,59 +264,10 @@
         "dataScale": 0,
         "nullable": "Y"
       }
-    },
-    "password": {
-      "type": "String",
-      "required": false,
-      "length": 45,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "password",
-        "dataType": "varchar",
-        "dataLength": 45,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "realm": {
-      "type": "String",
-      "required": false,
-      "length": 45,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "realm",
-        "dataType": "varchar",
-        "dataLength": 45,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "verificationtoken": {
-      "type": "String",
-      "required": false,
-      "length": 45,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "verificationToken",
-        "dataType": "varchar",
-        "dataLength": 45,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      }
     }
   },
-  "acls": [
-    {
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "ALLOW",
-      "accessType": "*"
-    }
-  ]
+  "validations": [],
+  "relations": {},
+  "acls": [ { "principalType": "ROLE", "principalId": "$everyone", "permission": "ALLOW", "accessType": "READ" } ],
+  "methods": {}
 }
