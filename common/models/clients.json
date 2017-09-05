@@ -6,7 +6,23 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "fname": {
+      "type": "String",
+      "required": true,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "fname",
+        "dataType": "varchar",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [ { "principalType": "ROLE", "principalId": "$everyone", "permission": "ALLOW", "accessType": "READ" } ],
