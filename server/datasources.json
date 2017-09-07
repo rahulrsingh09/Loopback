@@ -4,23 +4,13 @@
     "connector": "memory"
   },
   "localmysql": {
-    "host": "localhost",
-    "port": 3306,
-    "url": "",
-    "database": "loopback",
-    "password": "root",
-    "name": "localmysql",
-    "user": "root",
-    "connector": "mysql"
-  },
-  "usermysql": {
-    "host": "localhost",
+    "host": "db-staging.c1exchange.com",
     "port": 3306,
     "url": "",
     "database": "C1X-BANNERG",
-    "password": "root",
-    "name": "usermysql",
-    "user": "root",
+    "password": "drs35dcw13",
+    "name": "localmysql",
+    "user": "mohanr",
     "connector": "mysql"
   }
 }

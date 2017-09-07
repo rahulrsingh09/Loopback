@@ -14,8 +14,13 @@
     ]
   },
   "User": {
-    "dataSource": "usermysql",
+    "dataSource": "localmysql",
     "public" : false
+  },
+  "user": {
+    "dataSource": "localmysql",
+   
+    "public": true
   },
   "AccessToken": {
     "dataSource": "db",
@@ -64,7 +69,7 @@
     }
   },
   "user": {
-    "dataSource": "usermysql",
+    "dataSource": "localmysql",
     "public": true
   }
 }

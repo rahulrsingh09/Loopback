@@ -4,7 +4,7 @@
   "options": {
     "mysql": {
       "schema": "C1X-BANNERG",
-      "table": "User"
+      "table": "user"
     },
     "validateUpsert": true
   },
@@ -25,6 +25,10 @@
         "nullable": "N"
       }
     },
+    "realm": false,
+    
+  "emailVerified":false,
+    "verificationToken":false,
     "accId": {
       "type": "Number",
       "required": false,
@@ -48,6 +52,21 @@
       "scale": null,
       "mysql": {
         "columnName": "fname",
+        "dataType": "varchar",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "email": {
+      "type": "String",
+      "required": false,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "email",
         "dataType": "varchar",
         "dataLength": 300,
         "dataPrecision": null,
@@ -100,7 +119,7 @@
         "nullable": "Y"
       }
     },
-    "passwordHash": {
+    "password": {
       "type": "String",
       "required": false,
       "length": 300,
@@ -268,6 +287,6 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [ { "principalType": "ROLE", "principalId": "$everyone", "permission": "ALLOW", "accessType": "READ" } ],
+  "acls": [ { "principalType": "ROLE", "principalId": " $everyone", "permission": "ALLOW", "accessType": "READ" } ],
   "methods": {}
 }
