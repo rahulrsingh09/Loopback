@@ -12,5 +12,5 @@ module.exports = function(server) {
   server.use(router);
   
 };
-
+// fro debug start as debug=* node .`
   
