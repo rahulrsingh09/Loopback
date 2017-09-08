@@ -29,44 +29,9 @@
   "ACL": {
     "dataSource": "db",
     "public": false
-  },
-  "RoleMapping": {
-    "dataSource": "db",
-    "public": false,
-    "options": {
-      "strictObjectIDCoercion": true
-    }
-  },
-  "Role": {
-    "dataSource": "db",
-    "public": false
-  },
-  "message": {
-    "dataSource": null
-  },
-  "CoffeeShop": {
-    "dataSource": "localmysql",
-    "public": true
-  },
-  "Review": {
-    "dataSource": "localmysql",
-    "public": true
-  },
-  "Reviewer": {
-    "dataSource": "localmysql",
-    "public": true
-  },
-  "test": {
-    "dataSource": "db",
-    "public": true,
-    "options": {
-      "remoting": {
-        "sharedMethods": {
-          "*": false,
-          "greet": true
-        }
-      }
-    }
   }
+  
+  
+  
 
 }
