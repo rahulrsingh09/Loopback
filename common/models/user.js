@@ -8,8 +8,9 @@ module.exports = function(user) {
 
 var jsSHA = require("jssha");
     module.exports = function (user) {
-    console.log("here");
+  
     user.prototype.hasPassword = function(plain, fn) {
+        console.log(this.password)
         fn = fn || utils.createPromiseCallback();
         if (this.password && plain) {
             var shaObj = new jsSHA("salt"+plain, "BYTES");

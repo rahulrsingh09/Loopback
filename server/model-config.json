@@ -41,7 +41,7 @@
     "dataSource": "db",
     "public": false
   },
-  "Message": {
+  "message": {
     "dataSource": null
   },
   "CoffeeShop": {
@@ -67,9 +67,6 @@
         }
       }
     }
-  },
-  "user": {
-    "dataSource": "localmysql",
-    "public": true
   }
+
 }
