@@ -24,6 +24,12 @@ After this go to the root folder and run node . this will start the server  and 
 To turn the debug mode on do a DEBUG=* node . which will log all the values when server starts.
 
 
-Official loopback documentation - http://loopback.io/doc/en/lb3/index.html
+Official loopback documentation - http://loopback.io/doc/en/lb3/index.html.\
+
+Things that we have been able to acheive here is 
+
+<li>Sync the model from loopback to db </li>
+<li>Create model from db to loopback</li>
+<li>Override Loopback default password hashing and password verification </li>
 
 
