@@ -5,6 +5,7 @@ module.exports = function(app) {
   var mysqlDs = app.dataSources.localmysql;
   //create all models
   async.parallel({
+ 
    // reviewers: async.apply(createReviewers),
    // coffeeShops: async.apply(createCoffeeShops),
   }, function(err, results) {
