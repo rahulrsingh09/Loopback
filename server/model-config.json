@@ -8,9 +8,8 @@
     ],
     "mixins": [
       "loopback/common/mixins",
-      "loopback/server/mixins",
-      "../common/mixins",
-      "./mixins"
+      "../node_modules/loopback-ds-paginate-mixin/lib",
+      "../common/mixins"
     ]
   },
   "User": {
@@ -20,6 +19,14 @@
   "user": {
     "dataSource": "localmysql",
    
+    "public": true
+  },
+  "mediaplan": {
+    "dataSource": "localmysql",
+    "public": true
+  },
+  "mediaplanline": {
+    "dataSource": "localmysql",
     "public": true
   },
   "AccessToken": {
