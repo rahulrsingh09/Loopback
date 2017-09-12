@@ -200,11 +200,16 @@
   "mixins": {
     "RowCount": true
   },
-  "validations": [],
+  
+"validations": [],
  
   "relations": {
-   
-},
+    "mediaplan": {
+      "type": "belongsTo",
+      "model": "mediaplan",
+      "foreignKey": "mediaPlanId"
+    }
+  },
   "acls": [ { "principalType": "ROLE", "principalId": "$authenticated", "permission": "ALLOW", "accessType": "READ" } ],
   "methods": {}
 }

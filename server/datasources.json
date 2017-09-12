@@ -12,5 +12,32 @@
     "name": "localmysql",
     "user": "mohanr",
     "connector": "mysql"
-  }
-}
+  },
+  
+    "geography": {
+      "name": "geography",
+      "connector": "es",
+     "hosts": [
+        {
+          "protocol": "http",
+          "host": "54.238.199.147",
+          "port": 9200,
+          "path":"targets"
+         
+         }
+      ],
+      "retryOnConflict": 10,
+      "apiVersion": "2.3",
+      "log": "trace",
+      "defaultSize": 50,
+      "requestTimeout": 30000
+      
+        
+        }
+        }
+      
+     
+
+  
+
+
