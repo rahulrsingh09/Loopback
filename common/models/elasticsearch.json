@@ -5,24 +5,6 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {
-    "hits":{
-    "_id": {
-      "type": "string"
-    },
-    "_index": {
-      "type": "string"
-    },
-    "_type": {
-      "type": "date"
-    },
-    "_score": {
-      "type": "string"
-     
-    }
-   
-  }
-  },
   "validations": [],
   "relations": {},
   "acls": [],
