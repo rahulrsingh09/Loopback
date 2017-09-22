@@ -21,10 +21,33 @@
         "dataScale": null,
         "nullable": "N"
       }
-    }
+    },
+    "password": {
+      "type": "String",
+      "required": false,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "password_hash",
+        "dataType": "varchar",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "verificationToken": false
   },
   "validations": [],
   "relations": {},
-  "acls": [ { "principalType": "ROLE", "principalId": "$everyone", "permission": "ALLOW", "accessType": "READ" } ],
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

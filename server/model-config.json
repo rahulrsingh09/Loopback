@@ -66,5 +66,8 @@
   "clients": {
     "dataSource": "localmysql",
     "public": true
+  },
+  "Email": {
+    "dataSource": "myEmail"
   }
 }

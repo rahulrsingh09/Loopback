@@ -22,5 +22,19 @@
     "name": "usermysql",
     "user": "root",
     "connector": "mysql"
+  },
+  "myEmail": {
+    "name": "myEmail",
+    "connector": "mail",
+    "transports": [{
+      "type": "SMTP",
+      "host": "smtp.gmail.com",
+      "secure": true,
+      "port": 465,
+      "auth": {
+        "user": "rahulrsingh09@gmail.com",
+        "pass": "rahulsingh09"
+      }
+    }]
   }
 }

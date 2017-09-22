@@ -14,6 +14,16 @@ app.start = function() {
     if (app.get('loopback-component-explorer')) {
       var explorerPath = app.get('loopback-component-explorer').mountPath;
       console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
+      app.models.Email.send({
+        to: 'rahulrsingh09@gmail.com',
+        from: 'rahulrsingh09@gmail.com',
+        subject: 'my subject',
+        text: 'my text',
+        html: 'my <em>html</em>'
+      }, function(err, mail) {
+        console.log('email sent!'); 
+        console.log(err);       
+      });
     }
   });
 };
